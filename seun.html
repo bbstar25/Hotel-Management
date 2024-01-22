@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel & Suit</title>
+    <link rel="stylesheet" href="seun.css">
+</head>
+
+<body> 
+    <div class="middle">
+        <h1>Hotel & Suit</h1>
+        <div class="form">
+            <div class="group">
+                <label for="ReceptionName">Reception Name</label>
+                <input type="text" id="receptionName" required>
+            </div>
+
+            <div class="group">
+                <label for="hotel">Hotel</label>
+                <select name="" id="hotel">
+                    <option value="Hotel Choice">Hotel Choice</option>
+                    <option value="Igboshere">Igboshere</option>
+                    <option value="Obalende Hotel">Obalende Hotel</option>
+                    <option value="Oshodi Hotel">Oshodi Hotel</option>
+                    <option value="Patey Hotel">Patey Hotel</option>
+                </select>
+            </div>
+
+            <div class="group">
+                <label for="HotelRoom">Hotel Room</label>
+                <select name="" id="hotelRoom">
+                    <option value="Room">Room...</option>
+                    <option value="Room 1">Room 1</option>
+                    <option value="Room 2">Room 2</option>
+                    <option value="Room 3">Room 3</option>
+                    <option value="Room 4">Room 4</option>
+                    <option value="Room 5">Room 5</option>
+                    <option value="Room 6">Room 6</option>
+                    <option value="Room 7">Room 7</option>
+                    <option value="Room 8">Room 8</option>
+                    <option value="Room 9">Room 9</option>
+                </select>
+            </div>
+
+            <div class="group">
+                <label for="CustomerName">Customer Name</label>
+                <input type="text" id="customerName" required>
+            </div>
+
+            <div class="group">
+                <label for="PhoneNumber">Phone Number</label>
+                <input type="text" id="phoneNumber" required>
+            </div>
+
+            <div class="group">
+                <label for="CustomerAddress">Customer Address</label>
+                <input type="text" id="customerAddress" required>
+            </div>
+
+            <div class="group">
+                <label for="NumberofDays">Number of Days</label>
+                <input type="text" id="numberDays" required>
+            </div>
+
+            <div class="group">
+                <label for="Amount">Amount</label>
+                <input type="text" id="amount" required>
+            </div>
+
+            <div class="group">
+                <label for="PaymentTransfer">Payment</label>
+                <select name="" id="paymentTransfer">
+                    <option value="Payment">Cash or Transfer</option>
+                    <option value="Cash">Cash</option>
+                    <option value="Transfer">Transfer</option>
+                </select>
+            </div>
+
+            <button class="buttonDone" id="submitButton" onclick="printReceipt()">
+                Done
+            </button>
+
+            <button class="buttonPrint" onclick="printReceiptAsText()">
+                Print Receipt
+            </button>
+        </div>
+
+        <div class="receipt" id="receiptContainer"></div>
+
+        <script src="seun.js"></script>
+    </div>
+
+    
+
+
+
